@@ -1,0 +1,2 @@
+# gatling-boilerplate
+Gatlingを使った性能試験シナリオを集めたBoilerplate
