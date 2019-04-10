@@ -32,3 +32,6 @@ gatling:testOnly computerdatabase.BasicSimulation
 ```bash
 tasks gatling -v
 ```
+
+# 参考資料
+- [公式ドキュメント](https://gatling.io/docs/current/)
