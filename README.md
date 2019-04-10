@@ -12,13 +12,13 @@ git clone https://github.com/keitakn/gatling-boilerplate.git && cd gatling-boile
 ## SBTを起動
 
 ```bash
-$ sbt
+sbt
 ```
 
 ## 全てのテストを実行します
 
 ```bash
-> gatling:test
+gatling:test
 ```
 
 ## 特定のテストだけを実行します
