@@ -21,13 +21,13 @@ $ sbt
 > gatling:test
 ```
 
-# 特定のテストだけを実行します
+## 特定のテストだけを実行します
 
 ```bash
 gatling:testOnly computerdatabase.BasicSimulation
 ```
 
-# テストの一覧を取得します
+## テストの一覧を取得します
 
 ```bash
 tasks gatling -v
