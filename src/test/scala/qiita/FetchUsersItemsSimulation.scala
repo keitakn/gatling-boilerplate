@@ -16,7 +16,8 @@ class FetchUsersItemsSimulation extends Simulation {
       http("fetch_user_request")
         .get("/api/v2/users/${userId}")
         .check(status.is(200))
-        .check(jsonPath("$.id").saveAs("responseId")))
+        .check(jsonPath("$.id").saveAs("responseId"))
+    )
     .exec(
       session => {
         val responseUserId = session("responseId").as[String]
@@ -27,7 +28,8 @@ class FetchUsersItemsSimulation extends Simulation {
     .exec(
       http("fetch_user_items_request")
         .get("/api/v2/users/${responseId}/items")
-        .check(status.is(200)))
+        .check(status.is(200))
+    )
 
   setUp(scn.inject(atOnceUsers(3)).protocols(httpProtocol))
 }
