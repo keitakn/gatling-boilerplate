@@ -83,6 +83,9 @@ tasks gatling -v
 # 参考資料
 - [公式ドキュメント](https://gatling.io/docs/current/)
 
+# コーディング規約
+- [Effective Scala](http://twitter.github.io/effectivescala/index-ja.html) に従います。
+
 # 実行用サーバーの構築
 それほど高スペックのサーバーは必要ないとは思いますが以下を参考にkernelパラメーターのチューニングを行っておいたほうが良いです。
 
