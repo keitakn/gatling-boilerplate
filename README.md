@@ -60,6 +60,26 @@ gatling:testOnly computerdatabase.BasicSimulation
 tasks gatling -v
 ```
 
+# サンプルシナリオ
+
+## computerdatabase.BasicSimulation
+
+[公式](https://github.com/gatling/gatling-sbt-plugin-demo) にあるサンプルシナリオそのままです。
+
+## computerdatabase.ComputerWorld
+
+[公式](https://github.com/gatling/gatling-sbt-plugin-demo) にあるサンプルシナリオそのままです。
+
+## qiita.FetchUsersItemsSimulation
+
+概要は下記の通りです。
+
+1. `src/test/resources/qiita/users.csv` からQiitaのユーザー情報を取得
+1. `/api/v2/users/:user_id` にリクエストを送信しレスポンスのユーザーIDを変数に格納
+1. 2の返り値のユーザーIDを使って `/api/v2/users/:user_id/items` にリクエストを送信する
+
+一見無駄な処理ですが、APIの返り値を利用し次のAPIリクエストを行うケースのサンプルとして作成しました。
+
 # 参考資料
 - [公式ドキュメント](https://gatling.io/docs/current/)
 
