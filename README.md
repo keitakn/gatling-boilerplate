@@ -72,6 +72,10 @@ tasks gatling -v
 
 ## qiita.FetchUsersItemsSimulation
 
+```bash
+gatling:testOnly qiita.FetchUsersItemsSimulation
+```
+
 概要は下記の通りです。
 
 1. `src/test/resources/qiita/users.csv` からQiitaのユーザー情報を取得
