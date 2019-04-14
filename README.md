@@ -80,6 +80,12 @@ tasks gatling -v
 
 一見無駄な処理ですが、APIの返り値を利用し次のAPIリクエストを行うケースのサンプルとして作成しました。
 
+実際にQiitaのAPIにリクエストを送る事になるので無闇に多数のリクエストを送る行為は避けて下さい。
+
+`QIITA_ACCESS_TOKEN` が存在する場合、QiitaAPIへのリクエスト時にリクエストヘッダーに追加します。
+
+[direnv](https://github.com/direnv/direnv) 等を使って環境変数を設定すると良いでしょう。
+
 # 参考資料
 - [公式ドキュメント](https://gatling.io/docs/current/)
 
